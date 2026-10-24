@@ -1,39 +1,56 @@
-# yu-picture-frontend
+# Picture Frontend - 云图库前端
 
-This template should help get you started developing with Vue 3 in Vite.
+基于 Vue 3 + TypeScript 开发的云图库前端项目，配合 Spring Boot 后端实现图片上传、管理、检索及个人空间等功能。
 
-## Recommended IDE Setup
+## 技术栈
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3
+- TypeScript
+- Vite
+- Ant Design Vue
+- Pinia
+- Vue Router
+- Axios
 
-## Type Support for `.vue` Imports in TS
+## 主要功能
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- 用户注册、登录及个人信息展示
+- 公共图库浏览、搜索和分类筛选
+- 图片上传、编辑、删除及详情查看
+- 图片批量创建
+- 图片管理及管理员审核
+- 私人空间创建与图片管理
 
-## Customize configuration
+## 本地运行
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+**1. 安装依赖**
 
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+**2. 启动开发环境**
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+**3. 访问项目**
 
-```sh
-npm run build
+```text
+http://localhost:5173
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+运行前请确保后端服务已经启动，并正确配置前端 API 请求地址。
 
-```sh
-npm run lint
-```
+## 后端项目
+
+本项目为云图库系统的前端部分，后端基于 Spring Boot、MySQL、Redis 和腾讯云 COS 实现。
+
+后端 GitHub 仓库：
+
+https://github.com/ZiMing929/picture-backend
+
+## 项目说明
+
+本项目用于个人学习和实践，主要涉及 Vue 3 前端开发、前后端接口交互、图片资源管理以及云存储服务集成。
